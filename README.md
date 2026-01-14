@@ -30,13 +30,23 @@
 
 ## 📥 Installation
 
-### Option 1: Docker (Recommended)
-Run ShadowAI instantly with verified settings.
+### Option 1: Docker (Pre-built Image)
+Pull and run the latest verified image directly from GitHub Container Registry.
+
+```bash
+docker run -d \
+  -p 3000:3000 \
+  --name shadow-ai \
+  ghcr.io/f-e-n-y-x/vision:latest
+```
+
+### Option 2: Docker (Self-Build)
+Build the image locally from source.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/shadow-ai.git
-cd shadow-ai
+git clone https://github.com/F-e-n-y-x/vision.git
+cd vision
 
 # 2. Build and Run
 docker build -t shadow-ai .
